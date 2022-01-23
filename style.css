@@ -16,6 +16,10 @@ header {
     height: 500px;
 }
 
+header::after {
+    opacity: .8;
+}
+
 nav {
     display: flex;
     justify-content: end;
@@ -160,10 +164,15 @@ textarea {
 
 .contact-button {
     padding: .5em 2em;
+    margin: 1em;
     cursor: pointer;
     border: none;
     text-transform: uppercase;
     background: rgb(191, 229, 217);
+}
+
+.contact-button:hover {
+    opacity: .8;
 }
 
 footer {
@@ -232,10 +241,9 @@ footer {
     }
 
     .close-icon {
-        margin-left: 8em;
-        transform: scale(2);
+        transform: scale(2) translateX(2em);
         color: #fff;
-        padding: 1em;
+        padding: 1em 0;
     }
  
     #nav {
@@ -253,16 +261,12 @@ footer {
         transition: all .4s ease-in-out;
     }
 
-    #nav .open {
-        display: flex;
-    }
-
     nav a {
-        padding: 1em 0;
+        padding: 1.2em 0;
     }
 
     nav a:last-child {
-        margin: .5em auto;
+        margin: 1em auto;
     }
     
     .title {
@@ -270,6 +274,10 @@ footer {
         height: 80%;
         text-align: center;
         top: -2%;
+    }
+
+    .title p {
+        width: 80%;
     }
 
     h1 {

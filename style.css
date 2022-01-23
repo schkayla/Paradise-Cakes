@@ -3,32 +3,27 @@
     padding: 0;
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    color: #111;
+    color: #222;
     text-decoration: none;
     list-style: none;
     line-height: 2em;
 }
 
 header {
-    background: center/cover url("pexels-marta-dzedyshko-2067436.jpg") no-repeat;
+    background: center/cover url("pexels-daria-shevtsova-1070850.jpg") no-repeat;
     object-fit: contain;
     width: 100%;
     height: 500px;
-}
-
-header::after {
-    opacity: .8;
 }
 
 nav {
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 1em;
+    padding: 2em;
 }
 
 nav a {
-    color: #fff;
     padding: 0 1.5em;
 }
 
@@ -53,7 +48,7 @@ a:hover {
     text-decoration: none;
 }
 
-.hamburger, .close-icon {
+header .hamburger, header .close-icon {
     display: none;
 }
 
@@ -68,8 +63,8 @@ a:hover {
     position: absolute;
     width: 700px;
     height: 300px;
-    background: rgba(191, 229, 217, 0.8);
-    mix-blend-mode: lighten;
+    background: rgba(191, 229, 217, 0.9);
+    /* mix-blend-mode: lighten; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,13 +219,8 @@ footer {
     * {
         font-size: 14px;
     }
-    
-    header {
-        background: center/cover url("pexels-marta-dzedyshko-2067436.jpg") no-repeat;
-        object-fit: cover;
-    }
 
-    .hamburger {
+    header .hamburger {
         display: block;
         position: absolute;
         right: 10%;
@@ -240,8 +230,9 @@ footer {
         z-index: 9;
     }
 
-    .close-icon {
-        transform: scale(2) translateX(2em);
+    header .close-icon {
+        display: block;
+        transform: scale(2) translateX(2.5em);
         color: #fff;
         padding: 1em 0;
     }
@@ -262,18 +253,22 @@ footer {
     }
 
     nav a {
-        padding: 1.2em 0;
+        padding: 1em 0;
+        color: #fff;
     }
 
     nav a:last-child {
         margin: 1em auto;
     }
+
+    .title-container {
+        height: 100%;
+    }
     
     .title {
         width: 100%;
-        height: 80%;
+        height: 500px;
         text-align: center;
-        top: -2%;
     }
 
     .title p {

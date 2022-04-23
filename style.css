@@ -338,6 +338,20 @@ footer {
         padding: .5em .5em .5em 1.5em;
     }
 
+    #cakes .grid {
+        grid-template: repeat(6, 1fr) / 1fr;
+        gap: 1%;
+        margin: 5%;
+    }
+
+    .cake-item-2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        height: 100%;
+    }
+
     .about-section {
         margin: 5em 5%;
         flex-wrap: wrap;

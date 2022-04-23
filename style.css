@@ -9,6 +9,10 @@
     line-height: 2em;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 button, .nav-button {
     background: #BFE5D9;
     padding: .5em 3em;
@@ -45,6 +49,7 @@ nav {
 nav a {
     padding: 0 1.5em;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 nav a:last-child {
@@ -86,7 +91,9 @@ h1 {
 
 #description {
     max-width: 40%;
+    font-size: 1.2em;
     margin: 5em auto;
+    text-align: center;
 }
 
 h3 {
@@ -94,13 +101,35 @@ h3 {
     width: 200px;
     padding: .5em 0em .5em 2em;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: 'Playball', cursive;
     margin-bottom: 3em;
 }
 
 #cakes {
     margin: 5em auto;
+}
+
+#cakes .grid {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 3% 2%;
+    margin: 2%;
+}
+
+.cake-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cake-item-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 80%;
+    align-self: center;
 }
 
 .about-section {
@@ -117,6 +146,8 @@ h3 {
 .about-photo {
     width: 200px;
     height: 250px;
+    border-radius: 20px;
+
 }
 
 #contact {
